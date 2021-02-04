@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JAMStack with Eleventy--Data Formats Used for Visualization Applications</title>
+   
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+   
+   
+     <link rel="stylesheet" href="/css/styles.css">
+    </head>
+  <body>
+
+ <nav>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="/">Yoonsun Lee</a>
+
+                        <ul class="uk-navbar-nav">
+                           
+                            <li>
+                                <a href="#">References</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                   
+                                        
+        <ul><li><a  target="_blank" href="https://www.ysl150.com/">
+              Portfolio
+            </a></li><li><a  target="_blank" href="https://github.com/persephonepunch">
+              Github
+            </a></li><li><a  target="_blank" href="https://www.linkedin.com/in/yoonsunlee/">
+              Linkedin
+            </a></li><li><a  target="_blank" href="https://twitter.com/everdenepublic">
+              Twitter
+            </a></li><li><a  target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/">
+              Blog
+            </a></li></ul>
+</div>
+</div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+ <div uk-navbar>
+
+
+  <div class="uk-container">
+
+
+ <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h6 class="uk-modal-title">Yoonsun Lee</h6>
+                </div>
+                <div class="uk-modal-body">
+                    <p>References and Resources</p>
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li><p>  <li><a href="tel:1-917-587-9628">917 587 9628</a></li></p>
+                   </ul>
+
+                 
+
+</div>
+
+
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default" type="button"><a href="mailto:yoonsunlee150@gmail.com">Email Me</a></button>
+                   
+                </div>
+            </div>
+</div>
+
+        <div id="modal-search" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <div>
+
+                    <ul class="uk-nav-primary uk-nav-center" uk-nav>
+                      
+                    </ul>
+
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Collections</a></li>
+                        <ul class="uk-nav-sub">
+                          <li><a href="/clients/">clients</a></li><li><a href="/courses/">courses</a></li></ul>
+                    </li>
+                    
+                  
+                </ul>
+
+                <h5>Yoonsun Lee</h5>
+
+                <p>
+                <a href="mailto:yoonsunlee150@gmail.com">Email Me</a> <br>
+                <a href="tel:1-917-587-9628">917 587 9628</a>
+                </p>
+
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li></ul>
+
+            </div>
+  </div>
+
+
+  <!-- /TOP -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				   <div class="wrapper">
+    <div class="uk-grid">
+      <div class="uk-width-1-1">
+        <h1>Common Data-Viz Formats</h1>
+<p>Data Visualization via computers means that you take some existing data and use a computer to process the information that you have gathered. In order to create visualizations, the data has to be converted (or parsed) into a format that is easy for computers to understand. There are many formats available, but some are better than others depending on what you're using to process. Let's take a look at some of our options.</p>
+<h2>Microsoft Excel</h2>
+<p><img src="http://i.imgur.com/qeKvuau.png" alt="Microsoft Excel">
+The most common format that people will use to process and sometimes visualize data is Microsoft Excel. Developed by Microsoft for Macintosh computers in 1988. Microsoft Excel is one of the most popular office productivity applications used in offices throughout the world.</p>
+<p>Each version of Excel by default uses a proprietary format that although ubiquitous, is not compatible with other software. However, the program is so popular that it has become a standard for delivering data in many places. Excel does allow you export in more common formats like CSV (comma separated Values), Tab Delimited Text, XML and even has options to save as web pages. However because of the complexity of the application and its use as a presentation tool, some of these exports produce files that can be complex and tough for computers to parse.</p>
+<h3>Advantages</h3>
+<ul>
+<li>Ubiquitous</li>
+<li>Powerful presentation</li>
+<li>Can perform some visualizations</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+<li>Proprietary format</li>
+<li>Complex</li>
+</ul>
+<h2>CSV (and other text-based formats)</h2>
+<p>The most compatible format for sharing information in almost all cases is just a simple text file and just about any application that needs information will read some version of a text format, however structured data like the type you need to visualize often needs to contain information about rows and columns that is not easily expressed through a text file.</p>
+<p>One of the oldest and most common formats for saving data is the CSV file. It predates personal computers and has been used since the 1960s in just about every computer language. CSV stands for Comma Separated Values and, as the name implies, lets you express data by separating it with commas.</p>
+<pre><code>Name,Address,City,Sales
+&quot;Burke, Carlos P.&quot;,287-2469 Felis Rd.,Höchst,$8012.98
+&quot;Fuller, Jane A.&quot;,6421 Nibh. St.,Juneau,$9386.38
+&quot;Cunningham, Meghan C.&quot;,Ap #944-5884 Tellus St.,Milwaukee,$9102.62
+&quot;Lewis, Abraham B.&quot;,&quot;3221 Tortor, Avenue&quot;,Meduno,$5486.26
+&quot;Henson, Conan C.&quot;,&quot;P.O. Box 598, 6850 Nec, Rd.&quot;,Alcalá de Henares,$7196.31
+&quot;Dodson, Camden Q.&quot;,Ap #460-7854 Sed Rd.,Hohenems,$2870.35
+&quot;Ayala, Colin C.&quot;,Ap #354-8456 Rutrum Rd.,Borgerhout,$7019.71
+&quot;Vaughn, Charles J.&quot;,&quot;P.O. Box 378, 232 Lobortis Avenue&quot;,Roccanova,$6536.85
+&quot;Hunter, Paki P.&quot;,&quot;P.O. Box 739, 2611 Pede. Rd.&quot;,Beaumont,$9606.43
+&quot;Swanson, Cheyenne X.&quot;,Ap #963-5065 Massa. Rd.,Kapelle-op-den-Bos,$3322.18
+</code></pre>
+<p>CSV is a very loose format and because of that, there is no official standard. Therefore, the implementations sometimes vary. One attempt at a standard has been <a href="https://tools.ietf.org/html/rfc4180">rfc4180</a>, although often the specifics of how numbers are read are left to the application reading the format.</p>
+<p>CSV format is very easy to understand, each column on a table is separated by commas, any string data is written in single or double quotes, numeric values need no quotations. The first row of data is usually reserved for the column names. Also, although commas are traditionally used, because this is a text format, people often use other delimiters. Therefore, you'll find variations of this format as TSV (Tab Separated Values).</p>
+<h3>Advantages</h3>
+<ul>
+<li>Ubiquitous</li>
+<li>Compatible with all computer systems</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+<li>Data has to be simple tables</li>
+<li>Cannot understand complex relations</li>
+<li>Lack of Standard</li>
+</ul>
+<h3>Resources</h3>
+<ul>
+<li><a href="https://tools.ietf.org/html/rfc4180">rfc4180 Specification</a></li>
+<li><a href="http://www.convertcsv.com/">CSV Conversion Tools</a></li>
+<li><a href="http://www.convertcsv.com/generate-test-data.htm">CSV Data Generator</a></li>
+<li><a href="http://www.zamzar.com/convert/xls-to-csv/">XLS to CSV Conversion tool</a></li>
+</ul>
+<h2>XML</h2>
+<p>XML stands for eXtensible Markup Language. A markup language defines a set of rules that you can apply inside a text file that are designed to communicate rich data. The format works by creating a series of tags that area inside less than (&lt;) and greater than signs (&gt;). Inside these tags you can add attributes that let you add additional information to the data.</p>
+<pre><code class="language-xml">&lt;facility&gt;
+&lt;Prop_ID&gt;X092&lt;/Prop_ID&gt;
+&lt;Name&gt;Van Cortlandt Nature Center&lt;/Name&gt;
+&lt;Location&gt;246th Street and Broadway&lt;/Location&gt;
+&lt;Phone&gt;(718) 548-0912&lt;/Phone&gt;
+&lt;Hours&gt;
+April 1 - Memorial Day and Labor Day to October 31: open to the public Saturday and Sunday 12:00 noon - 4:00 pm, and for registered and scheduled activities at all other times.
+&lt;/Hours&gt;
+&lt;Directions&gt;
+&lt;p&gt;&lt;span class=&quot;emphasislittle&quot;&gt;By car:&lt;/span&gt; Take the Major Deegan/I-87 to Van Cortlandt Park South exit. Take the off ramp to the extreme right to the stoplight. Continue through the stop light then stay right and continue to the stop sign next to the park. Follow the road to a yellow gate just north of the end of an elevated train. Enter the yellow gate and continue on the road to the black fence. Enter the yellow gate and continue on the road to the black fence. Make a left turn at the black fence and park in the small lot. The Nature Center is the building with the orange front door.&lt;/p&gt; &lt;p&gt;&lt;span class=&quot;emphasislittle&quot;&gt;Public transportation:&lt;/span&gt; Take the 1 or 9 train to the 242nd Street stop. Walk north on Broadway. Enter the park at W.246th Street and follow the signs to the center.&lt;br /&gt; Take the Bx9 bus to the 242nd Street stop. Walk north on Broadway. Enter the park at W.246th Street and follow the signs to the center.&lt;/p&gt;
+&lt;/Directions&gt;
+&lt;Accessible/&gt;
+&lt;/facility&gt;
+</code></pre>
+<p>If you're familiar with HTML you'll note that it is very similar and is derived from XML. XML is often used to deliver data that is easily readable and displayed on websites. Unlike HTML, XML has a very rigid set of rules that make it much more structured and reliable than HTML, but also much more difficult to write.</p>
+<h3>Basic Rules</h3>
+<p>You create beginning and ending markup elements as in</p>
+<pre><code class="language-xml">&lt;name&gt;Bob&lt;/name&gt;
+</code></pre>
+<p>You can add attributes in any order inside the tags. Every attribute begins with a name followed by an equal sign and a value in quotations &quot;&quot;. Therefore you can add a n<strong>age</strong> attribute using</p>
+<pre><code class="language-xml">&lt;name age=&quot;36&quot; &gt;Bob&lt;/name&gt;`.
+</code></pre>
+<p>You could also express this same information using this type of notation.</p>
+<pre><code class="language-xml">&lt;person&gt;
+    &lt;name&gt;Bob&lt;/name&gt;
+    &lt;age&gt;36&lt;/age&gt;
+&lt;/person&gt;
+</code></pre>
+<p>Which format you use is up to you because XML is structure agnostic. You can define your own tags and as long as you follow the syntax of the language, it doesn't matter what your parameters are called or if you use tags instead of parameters.</p>
+<p>That's just a quick sample of what XML rules are like, for a more complete set of rules, take a look at the official <a href="http://www.w3.org/TR/REC-xml/">XML documentation</a>.</p>
+<p>The rules for XML are fairly simple, but the implementation of parsing of this language can be very complex. Because the language uses lots of punctuation and is very verbose, it means that expressing simple data often takes a lot more room than is necessary. Also, because attributes can be written in no particular order, parsing or translating this language can be challenging.</p>
+<p>XML's lack of pre-defined tags is one of its strengths. Several sub-formats which use XML have emerged like RSS, Atom, ML, XHTML and others.</p>
+<h3>Advantages</h3>
+<ul>
+<li>Popular Web Language</li>
+<li>Easy to read and understand</li>
+<li>Well supported online</li>
+<li>No pre-defined structure</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+<li>Extremely verbose</li>
+<li>Generates file larger than necessary</li>
+</ul>
+<h2>JSON</h2>
+<p><img src="http://i.imgur.com/l6HAmZh.png" alt="JSON Online Editor">
+JSON stands for JavaScript Online Notation, but don't let its name deceive you, it is another text format for storing structured data which is very popular on the web because of its similarity to JavaScript Objects. JSON is very easy to parse and fairly easy for humans to read and write. It has minimal punctuation, so adding the syntax to the data doesn't significantly increase the size of the file. It is sometimes jokingly referred to the <a href="http://www.json.org/fatfree.html">Fat-Free alternative to XML</a></p>
+<pre><code class="language-json">{
+  &quot;distribution&quot;: [
+    {
+      &quot;@type&quot;: &quot;dcat:Distribution&quot;,
+      &quot;downloadURL&quot;: &quot;http://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas.aspx&quot;,
+      &quot;mediaType&quot;: &quot;text/html&quot;,
+      &quot;title&quot;: &quot;Interactive map&quot;
+    },
+    {
+      &quot;@type&quot;: &quot;dcat:Distribution&quot;,
+      &quot;accessURL&quot;: &quot;http://gis.ers.usda.gov/arcgis/rest/services/&quot;,
+      &quot;description&quot;: &quot;See http://www.ers.usda.gov/developer/geospatial-apis.aspx for more information.&quot;,
+      &quot;format&quot;: &quot;API&quot;,
+      &quot;mediaType&quot;: &quot;application/json&quot;,
+      &quot;title&quot;: &quot;GIS API Services&quot;
+    },
+    {
+      &quot;@type&quot;: &quot;dcat:Distribution&quot;,
+      &quot;downloadURL&quot;: &quot;http://www.ers.usda.gov/datafiles/Food_Access_Research_Atlas/Download_the_Data/Current_Version/DataDownload.xlsx&quot;,
+      &quot;mediaType&quot;: &quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;,
+      &quot;title&quot;: &quot;Data file&quot;
+    }
+  ]
+}
+</code></pre>
+<p>Although JSON has its roots in the JavaScript language, it is language independent and has extensive support in most other programming languages. JSON allows you to easily express objects, arrays and values, so although the rules are simple, the variety of data that can be expressed is comprehensive.</p>
+<p>One of the issues with JSON is that although it is fairly easy to read and write, humans can easily make mistakes because larger data sets will have a lot of punctuation. In JSON, the keys must be surrounded by quotations, followed by a colon (:) and then a value which can a string (in quotes), a number (without quotes), a boolean (without quotes), an array (using brackets []) or an object (using curly brackets {}).</p>
+<h3>Advantages</h3>
+<ul>
+<li>Broad support in programming languages</li>
+<li>Extremely web friendly</li>
+<li>Easy to read and Write</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+<li>Easy to make mistakes</li>
+<li>Punctuation can be overwhelming</li>
+</ul>
+<h2>YAML</h2>
+<ul>
+<li><img src="http://i.imgur.com/jhsDlkX.png" alt="This YAML parser is a great way to work with YAML and explore it's syntax"></li>
+</ul>
+<p>JSON's overwhelming amount of punctuation sometimes makes it difficult for humans to type and some different sub-formats like CSON and YAML were developed to address. YAML is one of the more popular approaches to this and it's much easier to type than JSON. YAML is a recursive acronym that means &quot;YAML ain't Markup Language&quot;</p>
+<p>You can express simple name and value pairs like this:</p>
+<pre><code class="language-yaml">Company: Elit Aliquam Institute
+Revenue: $3,358.55
+Country: Philippines
+</code></pre>
+<p>Here's a more complex set of array data:</p>
+<pre><code class="language-yaml">Companies:
+  - name: Libero Dui Corporation
+    revenue: $3,075.41
+    country: Turkmenistan
+  - name: Elit Aliquam Institute
+    revenue: $3,358.55
+    country: Philippines
+  - name: Risus At Consulting
+    revenue: $7,987.82
+    country: Kuwait
+  - name: Cras Eu Ltd
+    revenue: $2,149.92
+    country: Australia
+  - name: Nibh Phasellus Nulla Consulting
+    revenue: $4,902.60
+    country: Norfolk Island
+  - name: Lobortis Quam A LLP
+    revenue: $2,616.62
+    country: Taiwan
+</code></pre>
+<p>Notice how beautiful that is to read. If you were to give this to someone to type in a text editor, it would be fairly easy for even someone without YAML experience to stick to the rules. Unlike with JSON, strings do not have to be quoted. Also, notice that although the whitespace is relevant, in YAML, we're adding tabs to make things align and make them more readable. Here's what that data would look like expressed as JSON.</p>
+<pre><code class="language-json">{
+  &quot;Companies&quot;: [
+    {
+      &quot;name&quot;: &quot;Libero Dui Corporation&quot;,
+      &quot;revenue&quot;: &quot;$3,075.41&quot;,
+      &quot;country&quot;: &quot;Turkmenistan&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Elit Aliquam Institute&quot;,
+      &quot;revenue&quot;: &quot;$3,358.55&quot;,
+      &quot;country&quot;: &quot;Philippines&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Risus At Consulting&quot;,
+      &quot;revenue&quot;: &quot;$7,987.82&quot;,
+      &quot;country&quot;: &quot;Kuwait&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Cras Eu Ltd&quot;,
+      &quot;revenue&quot;: &quot;$2,149.92&quot;,
+      &quot;country&quot;: &quot;Australia&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Nibh Phasellus Nulla Consulting&quot;,
+      &quot;revenue&quot;: &quot;$4,902.60&quot;,
+      &quot;country&quot;: &quot;Norfolk Island&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Lobortis Quam A LLP&quot;,
+      &quot;revenue&quot;: &quot;$2,616.62&quot;,
+      &quot;country&quot;: &quot;Taiwan&quot;
+    }
+  ]
+}
+</code></pre>
+<p>YAML is a great format for typing data, but it is not readily understood or parsed by most programming languages. It usually has to be converted into JSON, and different libraries exist to do this.</p>
+<h3>Advantages</h3>
+<ul>
+<li>Easiest format to read</li>
+<li>Very concise</li>
+</ul>
+<h3>Disadvantages</h3>
+<ul>
+<li>Tough to learn at first</li>
+<li>Poor support</li>
+<li>Needs to be converted</li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+        
+				
+			</div>
+		</section>
+
+       
+
+
+  </body>
+    
+    
+    </html>

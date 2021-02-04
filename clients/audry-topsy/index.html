@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JAMStack with Eleventy--</title>
+   
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+   
+   
+     <link rel="stylesheet" href="/css/styles.css">
+    </head>
+  <body>
+
+ <nav>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="/">Yoonsun Lee</a>
+
+                        <ul class="uk-navbar-nav">
+                           
+                            <li>
+                                <a href="#">References</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                   
+                                        
+        <ul><li><a  target="_blank" href="https://www.ysl150.com/">
+              Portfolio
+            </a></li><li><a  target="_blank" href="https://github.com/persephonepunch">
+              Github
+            </a></li><li><a  target="_blank" href="https://www.linkedin.com/in/yoonsunlee/">
+              Linkedin
+            </a></li><li><a  target="_blank" href="https://twitter.com/everdenepublic">
+              Twitter
+            </a></li><li><a  target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/">
+              Blog
+            </a></li></ul>
+</div>
+</div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+ <div uk-navbar>
+
+
+  <div class="uk-container">
+
+
+ <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h6 class="uk-modal-title">Yoonsun Lee</h6>
+                </div>
+                <div class="uk-modal-body">
+                    <p>References and Resources</p>
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li><p>  <li><a href="tel:1-917-587-9628">917 587 9628</a></li></p>
+                   </ul>
+
+                 
+
+</div>
+
+
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default" type="button"><a href="mailto:yoonsunlee150@gmail.com">Email Me</a></button>
+                   
+                </div>
+            </div>
+</div>
+
+        <div id="modal-search" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <div>
+
+                    <ul class="uk-nav-primary uk-nav-center" uk-nav>
+                      
+                    </ul>
+
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Collections</a></li>
+                        <ul class="uk-nav-sub">
+                          <li><a href="/clients/">clients</a></li><li><a href="/courses/">courses</a></li></ul>
+                    </li>
+                    
+                  
+                </ul>
+
+                <h5>Yoonsun Lee</h5>
+
+                <p>
+                <a href="mailto:yoonsunlee150@gmail.com">Email Me</a> <br>
+                <a href="tel:1-917-587-9628">917 587 9628</a>
+                </p>
+
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li></ul>
+
+            </div>
+  </div>
+
+
+  <!-- /TOP -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				 
+
+  <!-- /Page -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				   <h1>Audry Topsy</h1>
+<p>Owner, <span class="font-weight-bold text-secondary">Topsy Turvy Cake Designs</span></p>
+<img data-src="http://trainingxyz.com/images/profiles/30825.jpg" uk-image alt="Audry Topsy uk-img">
+<h2>Friends</h2>
+<p > 
+<p><span uk-icon="heart"></span>
+<a class="badge badge-secondary" href="/clients/Dahlia Landon">Dahlia Landon</a></p>
+<p><span uk-icon="heart"></span>
+<a class="badge badge-secondary" href="/clients/Dalania Devitto">Dalania Devitto</a></p>
+<p><span uk-icon="heart"></span>
+<a class="badge badge-secondary" href="/clients/Dr. Elizabeth Chase">Dr. Elizabeth Chase</a></p>
+</p>
+<h2 >Posts</h2>
+<hr>
+<h4>This is my first post!</h4>
+<p><time class="item-date small d-block text-muted mb-2"
+  datetime="">2018-07-10 17:58:12</time></p>
+<p>Exciting to start posting here! This is a photo I took.</p>
+<hr>
+<h4>Second post</h4>
+<p><time class="item-date small d-block text-muted mb-2"
+  datetime="">2018-07-10 17:58:47</time></p>
+<p>Now I&#39;m going to share only a link with you!</p>
+<hr>
+<h4>Third post</h4>
+<p><time class="item-date small d-block text-muted mb-2"
+  datetime="">2018-07-10 17:59:40</time></p>
+<p>How about a link AND a photo!? </p>
+
+				
+			</div>
+		</section>
+
+   <!-- /Page -->
+  
+  
+          
+				
+			</div>
+		</section>
+
+       
+
+
+  </body>
+    
+    
+    </html>

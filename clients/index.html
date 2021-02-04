@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JAMStack with Eleventy--Clients</title>
+   
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+   
+   
+     <link rel="stylesheet" href="/css/styles.css">
+    </head>
+  <body>
+
+ <nav>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="/">Yoonsun Lee</a>
+
+                        <ul class="uk-navbar-nav">
+                           
+                            <li>
+                                <a href="#">References</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                   
+                                        
+        <ul><li><a  target="_blank" href="https://www.ysl150.com/">
+              Portfolio
+            </a></li><li><a  target="_blank" href="https://github.com/persephonepunch">
+              Github
+            </a></li><li><a  target="_blank" href="https://www.linkedin.com/in/yoonsunlee/">
+              Linkedin
+            </a></li><li><a  target="_blank" href="https://twitter.com/everdenepublic">
+              Twitter
+            </a></li><li><a  target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/">
+              Blog
+            </a></li></ul>
+</div>
+</div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+ <div uk-navbar>
+
+
+  <div class="uk-container">
+
+
+ <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h6 class="uk-modal-title">Yoonsun Lee</h6>
+                </div>
+                <div class="uk-modal-body">
+                    <p>References and Resources</p>
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li><p>  <li><a href="tel:1-917-587-9628">917 587 9628</a></li></p>
+                   </ul>
+
+                 
+
+</div>
+
+
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default" type="button"><a href="mailto:yoonsunlee150@gmail.com">Email Me</a></button>
+                   
+                </div>
+            </div>
+</div>
+
+        <div id="modal-search" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <div>
+
+                    <ul class="uk-nav-primary uk-nav-center" uk-nav>
+                      
+                    </ul>
+
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Collections</a></li>
+                        <ul class="uk-nav-sub">
+                          <li><a href="/clients/">clients</a></li><li><a href="/courses/">courses</a></li></ul>
+                    </li>
+                    
+                  
+                </ul>
+
+                <h5>Yoonsun Lee</h5>
+
+                <p>
+                <a href="mailto:yoonsunlee150@gmail.com">Email Me</a> <br>
+                <a href="tel:1-917-587-9628">917 587 9628</a>
+                </p>
+
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li></ul>
+
+            </div>
+  </div>
+
+
+  <!-- /TOP -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				 
+
+  <!-- /Page -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				      
+
+
+<!-- HERO -->
+<section class="uk-section uk-section-small">
+	<div class="uk-container">
+		<div class="uk-height-large uk-cover-container">
+
+		
+			<div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider>
+
+<ul class="uk-slider-items center: true uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m  uk-height-match">
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/30825.jpg"  alt="Audry Topsy" uk-img>
+               <h5 class="uk-card-title">Audry Topsy</h5>
+                <p>Topsy Turvy Cake Designs<br>Owner</p>
+                <a href="audry-topsy">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/15436.jpg"  alt="Dahlia Landon" uk-img>
+               <h5 class="uk-card-title">Dahlia Landon</h5>
+                <p>Landon Hotel<br>CEO</p>
+                <a href="dahlia-landon">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/33926.jpg"  alt="Dalania Devitto" uk-img>
+               <h5 class="uk-card-title">Dalania Devitto</h5>
+                <p>OVCAA<br>Executive Director</p>
+                <a href="dalania-devitto">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/15919.jpg"  alt="Dr. Elizabeth Chase" uk-img>
+               <h5 class="uk-card-title">Dr. Elizabeth Chase</h5>
+                <p>Wisdom Pet Medicine<br>Owner</p>
+                <a href="dr.-elizabeth-chase">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/34273.jpg"  alt="Henry Twill Jr." uk-img>
+               <h5 class="uk-card-title">Henry Twill Jr.</h5>
+                <p>H+ Sport<br>CEO</p>
+                <a href="henry-twill-jr.">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/15421.jpg"  alt="Jason Hemlock" uk-img>
+               <h5 class="uk-card-title">Jason Hemlock</h5>
+                <p>KinetEco<br>Principal Design Engineer</p>
+                <a href="jason-hemlock">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/30040.jpg"  alt="Kirk Hansel" uk-img>
+               <h5 class="uk-card-title">Kirk Hansel</h5>
+                <p>Hansel and Petal<br>Co-Owner</p>
+                <a href="kirk-hansel">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/34023.jpg"  alt="Leslie Richardson" uk-img>
+               <h5 class="uk-card-title">Leslie Richardson</h5>
+                <p>Landon Hotel<br>Administrative Assistant</p>
+                <a href="leslie-richardson">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/30891.jpg"  alt="Nadia Abore" uk-img>
+               <h5 class="uk-card-title">Nadia Abore</h5>
+                <p>Nadias Garden Restaurant<br>Owner</p>
+                <a href="nadia-abore">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/15441.jpg"  alt="Phyllis Lucero" uk-img>
+               <h5 class="uk-card-title">Phyllis Lucero</h5>
+                <p>Landon Hotel<br>MMH Director of Hospitality - Europe</p>
+                <a href="phyllis-lucero">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/31047.jpg"  alt="Sandie Gobnet" uk-img>
+               <h5 class="uk-card-title">Sandie Gobnet</h5>
+                <p>City of Orange Valley<br>Persona</p>
+                <a href="sandie-gobnet">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/34603.jpg"  alt="Sarah Greer" uk-img>
+               <h5 class="uk-card-title">Sarah Greer</h5>
+                <p>Red30 Design<br>Art Director</p>
+                <a href="sarah-greer">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/15432.jpg"  alt="Simon Lodine" uk-img>
+               <h5 class="uk-card-title">Simon Lodine</h5>
+                <p>KinetEco<br>CEO</p>
+                <a href="simon-lodine">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/35193.jpg"  alt="Simon Pixelford" uk-img>
+               <h5 class="uk-card-title">Simon Pixelford</h5>
+                <p>Pixelford Photography<br>Owner</p>
+                <a href="simon-pixelford">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/15443.jpg"  alt="Tammy Marley-Cox" uk-img>
+               <h5 class="uk-card-title">Tammy Marley-Cox</h5>
+                <p>North America<br>Director of Hospitality</p>
+                <a href="tammy-marley-cox">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/30745.jpg"  alt="Tony Luis Salvador" uk-img>
+               <h5 class="uk-card-title">Tony Luis Salvador</h5>
+                <p>Leaf and Mortar<br>Principal Landscape Architect</p>
+                <a href="tony-luis-salvador">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/35199.jpg"  alt="Tracy Westbay" uk-img>
+               <h5 class="uk-card-title">Tracy Westbay</h5>
+                <p>Explore California<br>Creative Director</p>
+                <a href="tracy-westbay">more info</a>
+             </div>
+        </div>
+        </li>
+    
+        <li>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+             <div class="uk-card-media-top">
+              <img data-src="http://trainingxyz.com/images/profiles/thumb/15444.jpg"  alt="Victor Embargello" uk-img>
+               <h5 class="uk-card-title">Victor Embargello</h5>
+                <p>Landon Hotel<br>MMH Director of Hospitality - Latin America</p>
+                <a href="victor-embargello">more info</a>
+             </div>
+        </div>
+        </li>
+        
+
+
+ </ul>
+
+
+ <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>   
+ </div>
+
+   
+
+
+</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		<!-- HERO -->
+		<!-- FEATURED -->
+		<div class="uk-container">
+
+		<h2>Data Built UI/Dynamic Page Generation</h2>
+			<h4 class="uk-heading-line uk-text-bold"><span>Featured</span></h4>
+			<div data-uk-slider="velocity: 5">
+				<div class="uk-position-relative">
+					<div class="uk-slider-container">
+						<ul class="uk-slider-items uk-child-width-1-2@m uk-grid uk-grid-medium news-slide">
+							<li>
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid>
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+											<img src="https://picsum.photos/500/500/?random=1" alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Short Blog Title</a>
+											</h3>
+											<span class="uk-article-meta">Published 12th August 2019</span>
+											<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid>
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+											<img src="https://picsum.photos/500/500/?random=2" alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Short Blog Title</a>
+											</h3>
+											<span class="uk-article-meta">Published 12th August 2019</span>
+											<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid>
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+											<img src="https://picsum.photos/500/500/?random=3" alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Short Blog Title</a>
+											</h3>
+											<span class="uk-article-meta">Published 12th August 2019</span>
+											<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid>
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1">
+											<img src="https://picsum.photos/500/500/?random=4" alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Short Blog Title</a>
+											</h3>
+											<span class="uk-article-meta">Published 12th August 2019</span>
+											<p class="uk-margin-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="uk-hidden@l uk-light">
+						<a class="uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+						<a class="uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+					</div>
+					<div class="uk-visible@l">
+						<a class="uk-position-center-left-out uk-position-small" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+						<a class="uk-position-center-right-out uk-position-small" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+					</div>
+				</div>
+				<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"><li></li></ul>
+			</div>
+		</div>
+		<!-- /FEATURED -->
+		<!--CONTENT-->
+		<div class="uk-section uk-section-default">
+			<div class="uk-container">
+				<div class="uk-grid" data-ukgrid>
+					<div class="uk-width-2-3@m">
+						<h4 class="uk-heading-line uk-text-bold"><span>Latest News</span></h4>
+						<article class="uk-section uk-section-small uk-padding-remove-top">
+							<header>
+								<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom"><a title="Fusce facilisis tempus magna ac dignissim." class="uk-link-reset" href="#">Fusce facilisis tempus magna ac dignissim.</a></h2>
+								<p class="uk-article-meta">Written on March 23, 2019. Posted in <a href="#">Blog</a> | <span data-uk-icon="icon: future"></span> Takes 7 min reading.</p>
+							</header>
+							<figure>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAAA7Ldc6AAADuUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA3p/4AAaxRls8AAAAASUVORK5CYII=" data-src="https://picsum.photos/800/300/?random=1" width="800" height="300"  alt="Alt text" class="lazy" data-uk-img>
+								<figcaption class="uk-padding-small uk-text-center uk-text-muted">Caption of the image</figcaption>
+							</figure>
+							<p>UPDATE 24th October 15.10 BST — Vivamus sed consequat urna. Fusce vitae urna sed ante placerat iaculis. Suspendisse potenti. Pellentesque quis fringilla libero. In hac habitasse platea dictumst.</p>
+							<p>Ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<a href="#" title="Read More" class="uk-button uk-button-default uk-button-small">READ MORE</a>
+							<hr>
+						</article>
+						<article class="uk-section uk-section-small uk-padding-remove-top">
+							<header>
+								<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom"><a title="Ultricies eget, tempor sit amet, ante" class="uk-link-reset" href="#">Ultricies eget, tempor sit amet, ante.</a></h2>
+								<p class="uk-article-meta">Written on March 22, 2019. Posted in <a href="#">Blog</a> | <span data-uk-icon="icon: future"></span> Takes 7 min reading.</p>
+							</header>
+							<figure>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAAA7Ldc6AAADuUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA3p/4AAaxRls8AAAAASUVORK5CYII=" data-src="https://picsum.photos/800/300/?random=2" width="800" height="300" alt="Alt text" class="lazy" data-uk-img>
+								<figcaption class="uk-padding-small uk-text-center uk-text-muted">Caption of the image</figcaption>
+							</figure>
+							
+							<p>UPDATE 24th October 15.10 BST — Vivamus sed consequat urna. Fusce vitae urna sed ante placerat iaculis. Suspendisse potenti. Pellentesque quis fringilla libero. In hac habitasse platea dictumst.</p>
+							<p>Ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<a href="#" title="Read More" class="uk-button uk-button-default uk-button-small">READ MORE</a>
+							<hr>
+						</article>
+						<article class="uk-section uk-section-small uk-padding-remove-top">
+							<header>
+								<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom"><a title="Donec eu libero sit amet quam egestas semper" class="uk-link-reset" href="#">Donec eu libero sit amet quam egestas semper</a></h2>
+								<p class="uk-article-meta">Written on March 21, 2019. Posted in <a href="#">Blog</a> | <span data-uk-icon="icon: future"></span> Takes 7 min reading.</p>
+							</header>
+							<figure>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAAA7Ldc6AAADuUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA3p/4AAaxRls8AAAAASUVORK5CYII=" data-src="https://picsum.photos/800/300/?random=3" width="800" height="300" alt="Alt text" class="lazy" data-uk-img>
+								<figcaption class="uk-padding-small uk-text-center uk-text-muted">Caption of the image</figcaption>
+							</figure>
+							<p>UPDATE 24th October 15.10 BST — Vivamus sed consequat urna. Fusce vitae urna sed ante placerat iaculis. Suspendisse potenti. Pellentesque quis fringilla libero. In hac habitasse platea dictumst.</p>
+							<p>Ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<a href="#" title="Read More" class="uk-button uk-button-default uk-button-small">READ MORE</a>
+						</article>
+						<article class="uk-section uk-section-small uk-padding-remove-top">
+							<header>
+								<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom"><a title="Donec eu libero sit amet quam egestas semper" class="uk-link-reset" href="#">Donec eu libero sit amet quam egestas semper</a></h2>
+								<p class="uk-article-meta">Written on March 21, 2019. Posted in <a href="#">Blog</a> | <span data-uk-icon="icon: future"></span> Takes 7 min reading.</p>
+							</header>
+							<figure>
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAAA7Ldc6AAADuUlEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA3p/4AAaxRls8AAAAASUVORK5CYII=" data-src="https://picsum.photos/800/300/?random=4" width="800" height="300" alt="Alt text" class="lazy" data-uk-img>
+								<figcaption class="uk-padding-small uk-text-center uk-text-muted">Caption of the image</figcaption>
+							</figure>
+							<p>UPDATE 24th October 15.10 BST — Vivamus sed consequat urna. Fusce vitae urna sed ante placerat iaculis. Suspendisse potenti. Pellentesque quis fringilla libero. In hac habitasse platea dictumst.</p>
+							<p>Ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<a href="#" title="Read More" class="uk-button uk-button-default uk-button-small">READ MORE</a>
+						</article>
+					</div>
+					<div class="uk-width-1-3@m">
+						<h4 class="uk-heading-line uk-text-bold"><span>Archive</span></h4>
+						<ul class="uk-list">
+							<li><a href="">March</a></li>
+							<li><a href="">February</a></li>
+							<li><a href="">January</a></li>
+							<li><a href="">December <small>(2017)</small></a></li>
+							<li><a href="">November <small>(2017)</small></a></li>
+							<li><a href="">October <small>(2017)</small></a></li>
+							<li><a href="">September <small>(2017)</small></a></li>
+							<li><a href="">August <small>(2017)</small></a></li>
+						</ul>
+						<h4 class="uk-heading-line uk-text-bold"><span>About Us</span></h4>
+						<div class="uk-tile uk-tile-small uk-tile-muted uk-border-rounded">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/CONTENT-->
+
+				
+			</div>
+		</section>
+
+   <!-- /Page -->
+  
+  
+          
+				
+			</div>
+		</section>
+
+       
+
+
+  </body>
+    
+    
+    </html>

@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JAMStack with Eleventy--Getting started with JSON</title>
+   
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+   
+   
+     <link rel="stylesheet" href="/css/styles.css">
+    </head>
+  <body>
+
+ <nav>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="/">Yoonsun Lee</a>
+
+                        <ul class="uk-navbar-nav">
+                           
+                            <li>
+                                <a href="#">References</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                   
+                                        
+        <ul><li><a  target="_blank" href="https://www.ysl150.com/">
+              Portfolio
+            </a></li><li><a  target="_blank" href="https://github.com/persephonepunch">
+              Github
+            </a></li><li><a  target="_blank" href="https://www.linkedin.com/in/yoonsunlee/">
+              Linkedin
+            </a></li><li><a  target="_blank" href="https://twitter.com/everdenepublic">
+              Twitter
+            </a></li><li><a  target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/">
+              Blog
+            </a></li></ul>
+</div>
+</div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+ <div uk-navbar>
+
+
+  <div class="uk-container">
+
+
+ <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h6 class="uk-modal-title">Yoonsun Lee</h6>
+                </div>
+                <div class="uk-modal-body">
+                    <p>References and Resources</p>
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li><p>  <li><a href="tel:1-917-587-9628">917 587 9628</a></li></p>
+                   </ul>
+
+                 
+
+</div>
+
+
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default" type="button"><a href="mailto:yoonsunlee150@gmail.com">Email Me</a></button>
+                   
+                </div>
+            </div>
+</div>
+
+        <div id="modal-search" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <div>
+
+                    <ul class="uk-nav-primary uk-nav-center" uk-nav>
+                      
+                    </ul>
+
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Collections</a></li>
+                        <ul class="uk-nav-sub">
+                          <li><a href="/clients/">clients</a></li><li><a href="/courses/">courses</a></li></ul>
+                    </li>
+                    
+                  
+                </ul>
+
+                <h5>Yoonsun Lee</h5>
+
+                <p>
+                <a href="mailto:yoonsunlee150@gmail.com">Email Me</a> <br>
+                <a href="tel:1-917-587-9628">917 587 9628</a>
+                </p>
+
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li></ul>
+
+            </div>
+  </div>
+
+
+  <!-- /TOP -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				   <div class="wrapper">
+    <div class="uk-grid">
+      <div class="uk-width-1-1">
+        <p>JSON stands for JavaScript Object Notation…it’s called that because storing data with JSON creates a JavaScript object. The JavaScript object can be easily parsed and manipulated with JavaScript.</p>
+<p>Where XML is arguably easier to read, but notoriously difficult to parse (describe to a computer), JSON makes it a breeze to store data in a format that machines dig. Once you encode the data with JSON, you can read it into a variable which creates an object. Really cool stuff. Let’s take a look.</p>
+<pre><code class="language-html">&lt;script&gt;
+  var data = { firstName: 'Ray' }
+  alert(data.firstName)
+&lt;/script&gt;
+</code></pre>
+<p><a href="http://jsfiddle.net/planetoftheweb/XcpGN/">See the JSON example on JSFiddle</a></p>
+<h2>Breaking JSON down</h2>
+<p>First, we create a variable to hold our data, and then we use JSON to define our object. Our sample object above is a simple as it gets. Just an item called firstName and it’s value Ray. When using strings with JSON, you should use them with quotations as above. If you use numbers, then you don’t have to use quotations.</p>
+<p>This example will cause your browser to alert you with the variable name.
+<img src="/images/posts/json01-dialog-ray.png" alt="JSON Example 01"></p>
+<h2>Creating an object placeholder</h2>
+<p>That’s great. Let’s go ahead and make it a bit more realistic by inserting our JSON data into an object in the DOM.</p>
+<pre><code class="language-html">&lt;div id=&quot;placeholder&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  var data = { firstName: 'Ray' }
+  document.getElementById('placeholder').innerHTML = data.firstName
+&lt;/script&gt;
+</code></pre>
+<p><a href="http://jsfiddle.net/planetoftheweb/XcpGN/1/">See the JSON example on JS Fiddle</a></p>
+<p>A couple of things about these changes…First, you’ll see that we added a bit of formatting to our JSON data. That’s just to make sure it’s easier to read for humans; you’ll often find JSON data formatted in this manner. The second thing is that the “joined” value (2012) didn’t need quotations because its a number. That’s still pretty simple data. Let’s try something more complex.</p>
+<h2>Adding Arrays</h2>
+<p>What if we wanted to enter a bunch of people…then we have to add array notation. You create arrays in JSON using brackets []. Let’s see how our data would look for a couple of users.</p>
+<pre><code class="language-html">&lt;div id=&quot;placeholder&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  var data = {
+    users: [
+      {
+        firstName: 'Ray',
+        lastName: 'Villalobos',
+        joined: 2012
+      },
+      {
+        firstName: 'John',
+        lastName: 'Jones',
+        joined: 2010
+      }
+    ]
+  }
+
+  document.getElementById('placeholder').innerHTML =
+    data.users[0].firstName + ' ' + data.users[0].lastName + ' ' + data.users[0].joined
+&lt;/script&gt;
+</code></pre>
+<p><a href="http://jsfiddle.net/planetoftheweb/XcpGN/3/">See the JSON example on JS Fiddle</a></p>
+<p>This looks more complicated, but it’s not really too hard to understand. Every object in JSON is stored with curly braces {}, an array is stored with brackets[]. So in order to organize our data, we created an object called users, which held an array (using brackets). That object had a couple of other objects…each stored like before with curly braces {}. Each element in that object was separated by commas.</p>
+<p>Notice that we obviously had to change our code for inserting the name. We had to include the new users object and then specify bracket notation to specify our first element in the array. Let’s add another level of complexity to our data structure just for kicks.</p>
+<pre><code class="language-html">&lt;div id=&quot;placeholder&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  var data = {
+    users: [
+      {
+        firstName: 'Ray',
+        lastName: 'Villalobos',
+        joined: {
+          month: 'January',
+          day: 12,
+          year: 2012
+        }
+      },
+      {
+        firstName: 'John',
+        lastName: 'Jones',
+        joined: {
+          month: 'April',
+          day: 28,
+          year: 2010
+        }
+      }
+    ]
+  }
+
+  document.getElementById('placeholder').innerHTML =
+    data.users[0].firstName + ' ' + data.users[0].lastName + '--' + data.users[0].joined.month
+&lt;/script&gt;
+</code></pre>
+<p><img src="/images/posts/json02-rayjanuary.png" alt="JSON Example 02"></p>
+<p><a href="http://jsfiddle.net/planetoftheweb/XcpGN/4/">See the JSON example on JS Fiddle</a></p>
+<p>Just one tiny level of complexity. We just added multiple fields to the joined object. We didn’t need an array here, just a series of objects, so we used the object notation. This is great and we’ve got some pretty good data, but now that we have multiple users, it’s time to go through each user and output them into a list.</p>
+<h2>Traversing the user list</h2>
+<p>So, if we want to go through the user list, we could simply use JavaScript’s for statement to take care of that. We’ll put the items inside a list.</p>
+<pre><code class="language-html">&lt;div id=&quot;placeholder&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  var data = {
+    users: [
+      {
+        firstName: 'Ray',
+        lastName: 'Villalobos',
+        joined: {
+          month: 'January',
+          day: 12,
+          year: 2012
+        }
+      },
+      {
+        firstName: 'John',
+        lastName: 'Jones',
+        joined: {
+          month: 'April',
+          day: 28,
+          year: 2010
+        }
+      }
+    ]
+  }
+
+  var output = '&lt;ul&gt;'
+  for (var i in data.users) {
+    output +=
+      '&lt;li&gt;' + data.users[i].firstName + ' ' + data.users[i].lastName + '--' + data.users[i].joined.month + '&lt;/li&gt;'
+  }
+  output += '&lt;/ul&gt;'
+
+  document.getElementById('placeholder').innerHTML = output
+&lt;/script&gt;
+</code></pre>
+<p><a href="http://jsfiddle.net/planetoftheweb/XcpGN/5/">See the JSON example on JS Fiddle</a></p>
+<p>So here, we use a for statement and created a variable called output to temporarily store the data. Once we go through all of the elements in the array, we use the output variable to populate the placeholder div. That works well, but as you can tell, our data structure is getting a little long.</p>
+<h2>Reading JSON from an external file</h2>
+<p>It would be nice if we could store this on an external file and then just read everything into the data variable. To make things easier, I’m going to use jQuery, so we’ll have to load that library first and then call it’s getJSON function. Here’s what our entire page’s code looks like.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;JSON Sample&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;placeholder&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;http://code.jquery.com/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      $.getJSON('data.json', function(data) {
+        var output = '&lt;ul&gt;'
+        for (var i in data.users) {
+          output +=
+            '&lt;li&gt;' +
+            data.users[i].firstName +
+            ' ' +
+            data.users[i].lastName +
+            '--' +
+            data.users[i].joined.month +
+            '&lt;/li&gt;'
+        }
+
+        output += '&lt;/ul&gt;'
+        document.getElementById('placeholder').innerHTML = output
+      })
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><img src="/images/posts/json03-johnjones.png" alt="JSON Example 03"></p>
+<p>Pretty much the same code as before without the data file. We just wrap everything inside jQuery’s getJSON function, which does the hard job of reading the file. Assuming the file is in the same directory here’s what our new data.json file looks like.</p>
+<pre><code class="language-json">{
+  &quot;users&quot;: [
+    {
+      &quot;firstName&quot;: &quot;Ray&quot;,
+      &quot;lastName&quot;: &quot;Villalobos&quot;,
+      &quot;joined&quot;: {
+        &quot;month&quot;: &quot;January&quot;,
+        &quot;day&quot;: 12,
+        &quot;year&quot;: 2012
+      }
+    },
+    {
+      &quot;firstName&quot;: &quot;John&quot;,
+      &quot;lastName&quot;: &quot;Jones&quot;,
+      &quot;joined&quot;: {
+        &quot;month&quot;: &quot;April&quot;,
+        &quot;day&quot;: 28,
+        &quot;year&quot;: 2010
+      }
+    }
+  ]
+}
+</code></pre>
+<p>Pretty much as before. As you can see, JSON is really easy to read and once you get used to the curly braces and brackets, not too hard to encode.</p>
+
+      </div>
+    </div>
+  </div>
+        
+				
+			</div>
+		</section>
+
+       
+
+
+  </body>
+    
+    
+    </html>

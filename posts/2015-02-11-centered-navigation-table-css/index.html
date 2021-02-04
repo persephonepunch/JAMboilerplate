@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JAMStack with Eleventy--Horizontally Centered Navigation Menu with CSS</title>
+   
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+   
+   
+     <link rel="stylesheet" href="/css/styles.css">
+    </head>
+  <body>
+
+ <nav>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="/">Yoonsun Lee</a>
+
+                        <ul class="uk-navbar-nav">
+                           
+                            <li>
+                                <a href="#">References</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                   
+                                        
+        <ul><li><a  target="_blank" href="https://www.ysl150.com/">
+              Portfolio
+            </a></li><li><a  target="_blank" href="https://github.com/persephonepunch">
+              Github
+            </a></li><li><a  target="_blank" href="https://www.linkedin.com/in/yoonsunlee/">
+              Linkedin
+            </a></li><li><a  target="_blank" href="https://twitter.com/everdenepublic">
+              Twitter
+            </a></li><li><a  target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/">
+              Blog
+            </a></li></ul>
+</div>
+</div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+ <div uk-navbar>
+
+
+  <div class="uk-container">
+
+
+ <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h6 class="uk-modal-title">Yoonsun Lee</h6>
+                </div>
+                <div class="uk-modal-body">
+                    <p>References and Resources</p>
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li><p>  <li><a href="tel:1-917-587-9628">917 587 9628</a></li></p>
+                   </ul>
+
+                 
+
+</div>
+
+
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default" type="button"><a href="mailto:yoonsunlee150@gmail.com">Email Me</a></button>
+                   
+                </div>
+            </div>
+</div>
+
+        <div id="modal-search" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <div>
+
+                    <ul class="uk-nav-primary uk-nav-center" uk-nav>
+                      
+                    </ul>
+
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Collections</a></li>
+                        <ul class="uk-nav-sub">
+                          <li><a href="/clients/">clients</a></li><li><a href="/courses/">courses</a></li></ul>
+                    </li>
+                    
+                  
+                </ul>
+
+                <h5>Yoonsun Lee</h5>
+
+                <p>
+                <a href="mailto:yoonsunlee150@gmail.com">Email Me</a> <br>
+                <a href="tel:1-917-587-9628">917 587 9628</a>
+                </p>
+
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li></ul>
+
+            </div>
+  </div>
+
+
+  <!-- /TOP -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				   <div class="wrapper">
+    <div class="uk-grid">
+      <div class="uk-width-1-1">
+        <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" width="700" height="450" src="https://www.youtube.com/embed/RT64aSNXnzY" frameborder="0" allowfullscreen></iframe>
+</div>
+<p>One of the first things you try to do when you learn CSS is to create a centered navigation menu, but it's not as straightforward as it should be. You'd think that there was some sort of center command and in the future, something like <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a> will make it a lot easier. But even flexbox is no magic bullet with poor browser support in older browsers and frankly, a somewhat confusing syntax.</p>
+<p>My current approach is to do something that ends up looking like this.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/popalu/11/embed?output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<h2>The Trick</h2>
+<p>Since you can just read the code above or watch the video, I'll give you the highlights so you can catch the critical part.</p>
+<pre><code class="language-html">&lt;nav class=&quot;sitemenu&quot;&gt;
+  &lt;div class=&quot;navwrapper&quot;&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt; MySite&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt; Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;about us&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt; contact us&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+<p>I've simplified it a bit here for clarity. The key extra item here is the addition of a wrapper div with a class navwrapper. In order to get this to work you'll need this extra piece of HTML.</p>
+<pre><code class="language-css">.sitemenu {
+  width: 100%;
+  background: #a2cea5;
+  font-family: 'Droid Sans', serif;
+  border-top: 8px solid #126758;
+}
+</code></pre>
+<p>##Set the width of main container
+The main thing here is the <code>width: 100%;</code> on the nav with the sitemenu class. You should have a container here that makes the width of the navigation container go full width. If you examine the code (by clicking on the HTML tab in the code window).</p>
+<h2>Enter the table style</h2>
+<p>next, you need to have another container inside the first one that sets its display to show up as if it were a table.</p>
+<pre><code class="language-css">.sitemenu &gt; .navwrapper {
+  display: table;
+  margin: 0 auto;
+}
+</code></pre>
+<p>The code that actually centers the table is the <code>margin: 0 auto;</code> line. This item will be the width of the menus, regardless of their size. Normally to center an element, you have to know its width, but setting the display to table here bypasses that.</p>
+<p>Honestly, the rest is just window dressing and pretty easy to follow from the code, so <a href="http://jsbin.com/popalu/9/">take a look at the jsbin</a> to learn more.</p>
+
+      </div>
+    </div>
+  </div>
+        
+				
+			</div>
+		</section>
+
+       
+
+
+  </body>
+    
+    
+    </html>

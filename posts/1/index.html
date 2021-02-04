@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JAMStack with Eleventy--</title>
+   
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+   
+   
+     <link rel="stylesheet" href="/css/styles.css">
+    </head>
+  <body>
+
+ <nav>
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+
+                        <a class="uk-navbar-item uk-logo" href="/">Yoonsun Lee</a>
+
+                        <ul class="uk-navbar-nav">
+                           
+                            <li>
+                                <a href="#">References</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                   
+                                        
+        <ul><li><a  target="_blank" href="https://www.ysl150.com/">
+              Portfolio
+            </a></li><li><a  target="_blank" href="https://github.com/persephonepunch">
+              Github
+            </a></li><li><a  target="_blank" href="https://www.linkedin.com/in/yoonsunlee/">
+              Linkedin
+            </a></li><li><a  target="_blank" href="https://twitter.com/everdenepublic">
+              Twitter
+            </a></li><li><a  target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/">
+              Blog
+            </a></li></ul>
+</div>
+</div>
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
+                        <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+ <div uk-navbar>
+
+
+  <div class="uk-container">
+
+
+ <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h6 class="uk-modal-title">Yoonsun Lee</h6>
+                </div>
+                <div class="uk-modal-body">
+                    <p>References and Resources</p>
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li><p>  <li><a href="tel:1-917-587-9628">917 587 9628</a></li></p>
+                   </ul>
+
+                 
+
+</div>
+
+
+
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+                    <button class="uk-button uk-button-default" type="button"><a href="mailto:yoonsunlee150@gmail.com">Email Me</a></button>
+                   
+                </div>
+            </div>
+</div>
+
+        <div id="modal-search" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <div>
+
+                    <ul class="uk-nav-primary uk-nav-center" uk-nav>
+                      
+                    </ul>
+
+                    <div class="uk-margin">
+                        <form class="uk-search uk-search-large">
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="#">Collections</a></li>
+                        <ul class="uk-nav-sub">
+                          <li><a href="/clients/">clients</a></li><li><a href="/courses/">courses</a></li></ul>
+                    </li>
+                    
+                  
+                </ul>
+
+                <h5>Yoonsun Lee</h5>
+
+                <p>
+                <a href="mailto:yoonsunlee150@gmail.com">Email Me</a> <br>
+                <a href="tel:1-917-587-9628">917 587 9628</a>
+                </p>
+
+                   <ul style="list-style: none;"><li class="uk-nav-header"><a target="_blank" href="https://www.ysl150.com/" >
+                           
+                          <span >portfolio</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://github.com/persephonepunch" >
+                           
+                          <span >github</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.linkedin.com/in/yoonsunlee/" >
+                           
+                          <span >linkedin</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://twitter.com/everdenepublic" >
+                           
+                          <span >twitter</span>
+                        </a>
+                        </li><li class="uk-nav-header"><a target="_blank" href="https://www.yslbeta.com/article/ui-kit-kitchen-sink/" >
+                           
+                          <span >blog</span>
+                        </a>
+                        </li></ul>
+
+            </div>
+  </div>
+
+
+  <!-- /TOP -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				 
+
+  <!-- /Page -->
+		<section id="content" class="uk-section uk-section-default">
+			<div class="uk-container">
+				
+				   <h1>Posts</h1>
+<div aria-label="Page navigation">
+  <ul class="uk-pagination uk-flex-center" uk-margin>
+  <li class="uk-disabled">
+    <a href="/posts/0/index.html"><span uk-icon="chevron-left"></span></a>
+  </li>
+  <li ">
+  <a href="/posts/0/index.html">1</a></li>
+  <li active">
+  <a href="/posts/1/index.html">2</a></li>
+  <li class="uk-disabled">
+    <a href="."><span uk-icon="chevron-right"></span></i></a>
+  </li>
+  </ul>
+</div>
+<div class="uk-grid">
+    <div class="uk-panel">
+      <div>
+        <img data-src="/images/posts/svggraphics_tn.png" alt="" uk-image>
+        <time datetime="Tue Mar 03 2015 00:00:00 GMT-0500 (Eastern Standard Time)">Mar 03, 2015</time>
+      </div>
+      <div>
+        <h4>Getting started creating SVG Graphics</h4>
+        <p >A lot of data visualizations use the SVG format to create graphics, so in this article, we&#39;ll use SVG to create some basic shapes and graphics. Understanding how the format works will help you when you&#39;re using SVG based libraries and frameworks.</p>
+      </div>
+    </div>
+  <div class="uk-light">
+    <a class="uk-button uk-button-primary" href="/posts/2015-03-03-creating-SVG-graphics/" >read more</a>
+  </div>
+</div><div class="uk-grid">
+    <div class="uk-panel">
+      <div>
+        <img data-src="/images/posts/rightsocialmedia_tn.png" alt="" uk-image>
+        <time datetime="Thu Aug 13 2015 00:00:00 GMT-0400 (Eastern Daylight Time)">Aug 13, 2015</time>
+      </div>
+      <div>
+        <h4>Getting the Right Social Media Followers</h4>
+        <p >Everyone talks about getting a lot of followers in social media, but what does that really mean? And why is it even important? Well everyone is wrong. I&#39;m much happier when I focus on getting the right type of followers.</p>
+      </div>
+    </div>
+  <div class="uk-light">
+    <a class="uk-button uk-button-primary" href="/posts/2015-08-13-Getting-the-Right-Social-Media-Followers/" >read more</a>
+  </div>
+</div><div class="uk-grid">
+    <div class="uk-panel">
+      <div>
+        <img data-src="/images/posts/jsfrontend_tn.png" alt="" uk-image>
+        <time datetime="Mon Dec 21 2015 00:00:00 GMT-0500 (Eastern Standard Time)">Dec 21, 2015</time>
+      </div>
+      <div>
+        <h4>6 JavaScript technologies you should already know</h4>
+        <p >Life&#39;s tough for a front end developer because the pace of learning moves so fast. Today&#39;s developer needs to be familiar with a number of libraries, frameworks and processes in order to be successful. Here&#39;s my list of JavaScript technologies that you should already be familiar with if you&#39;re a professional front end developer.</p>
+      </div>
+    </div>
+  <div class="uk-light">
+    <a class="uk-button uk-button-primary" href="/posts/2015-12-21-javascript-you-should-already-know/" >read more</a>
+  </div>
+</div><div class="uk-grid">
+    <div class="uk-panel">
+      <div>
+        <img data-src="/images/posts/json_tn.png" alt="" uk-image>
+        <time datetime="Fri Oct 12 2018 00:00:00 GMT-0400 (Eastern Daylight Time)">Oct 12, 2018</time>
+      </div>
+      <div>
+        <h4>Getting started with JSON</h4>
+        <p >Javascript has grown from a way to add interactivity on your page, to a language that lets you perform tasks that once belonged to servers. JSON provides for an easy way to create and store data structures within JavaScript. It’s super popular and a great alternative to XML.</p>
+      </div>
+    </div>
+  <div class="uk-light">
+    <a class="uk-button uk-button-primary" href="/posts/2018-10-12-json-tutorial/" >read more</a>
+  </div>
+</div><div aria-label="Page navigation">
+  <ul class="uk-pagination uk-flex-center" uk-margin>
+  <li class="uk-disabled">
+    <a href="/posts/0/index.html"><span uk-icon="chevron-left"></span></a>
+  </li>
+  <li ">
+  <a href="/posts/0/index.html">1</a></li>
+  <li active">
+  <a href="/posts/1/index.html">2</a></li>
+  <li class="uk-disabled">
+    <a href="."><span uk-icon="chevron-right"></span></i></a>
+  </li>
+  </ul>
+</div>
+
+				
+			</div>
+		</section>
+
+   <!-- /Page -->
+  
+  
+          
+				
+			</div>
+		</section>
+
+       
+
+
+  </body>
+    
+    
+    </html>
